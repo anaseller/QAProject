@@ -20,8 +20,7 @@ def test_drag_and_drop(driver):
     driver.get('https://www.globalsqa.com/demo-site/draganddrop/')
 
     #кликаем на куки-капчу
-    consent_button = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.XPATH, "//button[@aria-label='Соглашаюсь']")))
-    consent_button.click()
+    consent_button = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[aria-label='Соглашаюсь']")))
 
     print("Успешно кликнули по кнопке 'Соглашаюсь'")
 
