@@ -21,7 +21,7 @@ def test_drag_and_drop(driver):
 
     #кликаем на куки-капчу
     consent_button = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[aria-label='Соглашаюсь']")))
-
+    consent_button.click()
     print("Успешно кликнули по кнопке 'Соглашаюсь'")
 
     #кликаем по вкладке Photo Manager
