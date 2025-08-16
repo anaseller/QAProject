@@ -10,7 +10,7 @@ class EmployeeApi:
         return response
 
     def get_employee(self, employee_id):
-        url = f"{self.BASE_URL}/employee/info/{employee_id}"  # Обрати внимание на 'info'
+        url = f"{self.BASE_URL}/employee/info/{employee_id}"
         response = requests.get(url)
         return response
 
